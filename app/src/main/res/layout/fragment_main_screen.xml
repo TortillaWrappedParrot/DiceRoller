@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+
+    <ImageView
+        android:id="@+id/closetBackground"
+        android:layout_width="412dp"
+        android:layout_height="373dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="103dp"
+        android:layout_weight="0"
+        android:src="@drawable/ic_launcher_background" />
+
+    <ImageButton
+        android:id="@+id/fragmentSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="656dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:id="@+id/dieImage"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="541dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/dieText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="194dp"
+        android:text="Sample Dice" />
+
+</RelativeLayout>
