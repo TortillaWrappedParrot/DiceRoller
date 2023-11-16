@@ -1,10 +1,13 @@
 package com.example.diceroller
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import androidx.navigation.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +37,14 @@ class MainScreen : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main_screen, container, false)
+        val view = inflater.inflate(R.layout.fragment_main_screen, container, false)
+        val switchButton = view.findViewById<ImageButton>(R.id.mainFragment)
+
+        switchButton.setOnClickListener{
+            view.findNavController().navigate(R.id.main_to_drawer)
+        }
+
+        return view
     }
 
     companion object {
